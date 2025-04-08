@@ -1,0 +1,165 @@
+/* CSS Resets */
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+/* Page styling */
+body {
+    background-image: url("images/BG1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(41, 40, 40);
+    transition: all 2s;
+    font-family: "dekko";
+}
+
+body.switch {
+    
+    background-image: url("images/BG2.png");
+}
+
+#container {
+    position: relative;
+    width: 100%;
+    max-width: 1366px;
+    /* make sure the columns don't get too small and text stays readable */
+    min-width: 900px;
+    margin: 1em auto;
+    padding-top: 2em;
+}
+
+header {
+    margin: 0 auto 2em auto;
+}
+
+h1{
+    font-family: "crafty girls";
+    font-size: 3em;
+}
+
+body.switch h1{
+    color: #f5ede5;
+}
+
+body.switch h2{
+    color: #f5ede5;
+}
+
+h2{
+    font-family: "crafty girls";
+    margin-bottom: 50px;
+}
+h3{
+    font-size: 1em;
+    margin: 0;
+}
+
+#banner {
+    background-image: url("images/catepillar.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: relative;
+    display: flex;
+    width: 480px;
+    height: 150px;
+    margin: auto;
+    /* background-color: rgb(235, 235, 235);
+    color: #333; */
+    overflow: hidden;
+    display: grid;
+	place-items: center;
+    transition: all 2s;
+}
+
+#banner.switch {
+   /*  background-color: #333;
+    color: rgb(235, 235, 235); */
+    background-image: url("images/butterfly.png");
+    transition: all 2s;
+}
+
+
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2em auto;
+    gap: 60px;
+}
+
+main section {
+    flex: 1;
+    border: 2px rgb(70, 34, 1) dashed;
+    margin: 0 .25em;
+    padding: 1em;
+    background-color: rgb(245, 236, 225);
+}
+
+
+a {
+    text-decoration: none;
+}
+
+nav ol, nav ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+section li {
+    padding-left: 1.2em;
+}
+
+section a {
+    line-height: 1.1em;
+    display: inline-block;
+    padding: .5em;
+    color: rgb(92, 153, 51);
+}
+
+section a:hover {
+    background-color: rgb(92, 153, 51);
+    color: rgb(235, 235, 235);
+}
+
+section.switch a {
+    color: #761fbd;
+}
+
+section.switch a:hover {
+    background-color: #761fbd;
+    color: rgb(235, 235, 235);
+}
+
+button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 12px;
+    background-color: rgb(255, 230, 0);
+    color: #333;
+    border: 1px solid transparent;
+    border-radius: 20px;
+}
+
+button:hover {
+    background-color: rgb(236, 176, 8);
+    cursor: pointer;
+}
+
+button.switch {
+    background-color: rgb(241, 149, 73);
+    
+}
+
+button.switch:hover {
+    background-color: #aa5f09;
+    color: rgb(235, 235, 235)
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blockbuster Video</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+    <!-- Normalize CSS for browser compatability -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+  
+    <!-- My Styles -->
+    <link href="styles.css" rel="stylesheet">
+
+    <!-- My Script -->
+    <script src="script.js" defer></script>
+    
+</head>
+<body>
+
+  
+    <video id="myVideo" poster="images/thumbnail.png"   muted loop autoplay playsinline>
+        <source src="media/spin.mp4" type="video/mp4">
+        <source src="media/spin.webm" type="video/webm">
+
+        <p>Your browser doesn't support HTML5 video. 
+            Here is a <a href="media/spin.mp4">link to the video</a> instead.</p>
+
+
+    </video>
+
+    <i class="fas fa-expand"></i>
+
+
+    <svg>
+        <defs>
+            <path id="spiralPath" d="M325.09,270.91c0,14.97-12.12,27.09-27.09,27.09s-27.09-12.12-27.09-27.09h-.09c0-29.95,24.23-54.18,54.18-54.18s54.18,24.23,54.18,54.18h.09c0,44.92-36.35,81.27-81.27,81.27s-81.27-36.35-81.27-81.27h-.09c0-59.9,48.47-108.36,108.36-108.36s108.36,48.47,108.36,108.36h.09c0,74.87-60.58,135.45-135.45,135.45s-135.45-60.58-135.45-135.45h-.09c0-89.84,72.7-162.55,162.55-162.55s162.55,72.7,162.55,162.55h.09c0,104.82-84.82,189.64-189.64,189.64s-189.64-84.82-189.64-189.64h-.09c0-119.79,96.93-216.73,216.73-216.73s216.73,96.93,216.73,216.73h.09c0,134.77-109.05,243.82-243.82,243.82S54.18,405.68,54.18,270.91h-.09C54.09,121.17,175.26,0,325,0s270.91,121.17,270.91,270.91h.09c0,164.71-133.29,298-298,298S0,435.62,0,270.91"/>
+        </defs>
+        <text font-size="20" fill="black">
+            <textPath id="spiralText" href="#spiralPath" startOffset="0%">
+                <!-- Words will appear here -->
+            </textPath>
+        </text>
+    </svg>
+    
+
+    
+    
+</body>
+
+</html>
+
+
+
+  

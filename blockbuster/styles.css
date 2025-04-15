@@ -1,0 +1,49 @@
+#myVideo{
+    position: fixed;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 59%;
+    min-width: 100%;
+    min-height: 100%;
+
+   /*  filter: saturate(0%) */
+
+}
+
+.fa-expand{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 36px;
+    color: orange;  
+}
+
+.fa-expand:hover{
+   cursor: pointer; 
+}
+
+#text{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+#spiral{
+    position: absolute;
+
+    transform: scale(3.1);
+    left: -30%;
+    top: -35%;
+}
+
+.hidden{
+    opacity: 0;
+}
+
+.showing{
+    opacity: 0.25;
+}
+
+
+
+  

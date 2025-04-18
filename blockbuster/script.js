@@ -4,6 +4,7 @@
     const fs = document.querySelector('.fa-expand');
     
     const intervalID = setInterval(checkTime, 1000);
+    const img = document.querySelector('#pic');
 
 
     fs.addEventListener('click', function(){
@@ -17,24 +18,15 @@
     });
 
 
-
-
-
-    const textPath = document.querySelector('#spiralText');
-    const words = ["A", "circle", "is", "the", "reflection", "of", "eternity.", "It", "has", "no", "beginning", "and", "it", "has", "no", "end", "- and", "if", "you", "put", "several", "circles", "over", "each", "other,", "then", "you", "get", "a", "spiral."];
-    let newWord;
-
-    function addDivs(){
-        for(const i = 0; i <= words.length; i++){
-            setTimeout(function(){
-                    
-            }, 5500);
-
-        };
-        
+    function checkTime(){
+        if(0 < myVideo.currentTime && myVideo.currentTime < 16){
+            img.className = "showing";
+        }else{
+            img.className = "hidden";
+        }
     }
 
-    addDivs();
+    
 
 
 })();

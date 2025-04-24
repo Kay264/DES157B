@@ -1,0 +1,170 @@
+/*
+
+song 0 > hex #: 8E8D8D
+song 1 > hex #: 407046
+song 2 > hex #: 007CA8
+song 3 > hex #: D5BB64
+song 4 > hex #: A13B33
+song 5 > hex #: 733930
+song 6 > hex #: 45655E
+song 7 > hex #: 273A1A
+song 8 > hex #: 919297
+song 9 > hex #: 765425
+song 10 > hex #: D47674
+song 11 > hex #: 213088
+song 12 > hex #: 8E7D8D
+
+*/
+
+
+body{
+    background-color: #8E8D8D;
+    color: #DEDEE0;
+    font-size: 1.5em;
+}
+
+header{
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+h1{
+    font-family: "Poller One";
+    font-size: 3em;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    gap: 175px;
+}
+
+#leftSide, #rightSide {
+    flex: 1;
+    max-width: 600px;
+    position: relative;
+}
+
+/* left side*/
+
+#record{
+    animation: spin 16s linear infinite;
+}
+
+.nums{
+    font-size: 2em;
+}
+
+#num1{
+    position: absolute;
+    left: 73%;
+    top: -4%;
+    color: rgb(19, 18, 18);
+}
+
+#num2{
+    position: absolute;
+    left: 88%;
+    top: 1%;
+    color: rgb(19, 18, 18);
+}
+
+#num3{
+    position: absolute;
+    left: 95%;
+    top: 15%;
+    color: rgb(19, 18, 18);
+}
+
+#num4{
+    position: absolute;
+    left: 93%;
+    top: 25%;
+    color: rgb(19, 18, 18);
+}
+
+#num5{
+    position: absolute;
+    left: 75%;
+    top: 45%;
+    color: rgb(19, 18, 18);
+}
+
+#num6{
+    position: absolute;
+    left: 44%;
+    top: 52%;
+    color: rgb(19, 18, 18);
+}
+
+#num7{
+    position: absolute;
+    left: 13%;
+    top: 45%;
+    color: rgb(19, 18, 18);
+}
+
+#num8{
+    position: absolute;
+    left: -2%;
+    top: 32%;
+    color: rgb(19, 18, 18);
+}
+
+#num9{
+    position: absolute;
+    left: -6%;
+    top: 15%;
+    color: rgb(19, 18, 18);
+}
+
+#num12{
+    position: absolute;
+    left: 43%;
+    top: -9%;
+    color: rgb(19, 18, 18);
+}
+
+/* right side*/
+#albumCover{
+    margin-top: 80px;
+}
+
+#music{
+    text-align: center;
+}
+
+#WhatIWasDoing{
+    margin-top: 50px;
+    text-align: center;
+}
+
+#ActivityTitle{
+    color: rgb(19, 18, 18);
+}
+
+
+
+
+
+
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(90deg);
+
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -52,83 +52,63 @@ main{
     animation: spin 16s linear infinite;
 }
 
-.nums{
-    font-size: 2em;
+.clock {
+    position: relative;
+    height: 600px;
+    /* width: 100%; */
+    /* padding-top: 100%; */ /* Make it a square */
+    
 }
 
-#num1{
+#record {
     position: absolute;
-    left: 73%;
-    top: -4%;
-    color: rgb(19, 18, 18);
+    /* width: 100%;
+    height: 100%; */
+    object-fit: contain;
+    animation: spin 16s linear infinite;
 }
 
-#num2{
+.numbers {
     position: absolute;
-    left: 88%;
-    top: 1%;
-    color: rgb(19, 18, 18);
-}
-
-#num3{
-    position: absolute;
-    left: 95%;
-    top: 15%;
-    color: rgb(19, 18, 18);
-}
-
-#num4{
-    position: absolute;
-    left: 93%;
-    top: 25%;
-    color: rgb(19, 18, 18);
-}
-
-#num5{
-    position: absolute;
-    left: 75%;
-    top: 45%;
-    color: rgb(19, 18, 18);
-}
-
-#num6{
-    position: absolute;
+    top: 33%;
     left: 44%;
-    top: 52%;
+   /*  width: 100%;
+    height: 100%; */
+    width: 0;
+    height: 0;
+    transform: translate(-50%, -50%);
+}
+
+.nums {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: rotate(calc(var(--i) * 30deg)) translateY(-320px) rotate(calc(var(--i) * -30deg));
+    transform-origin: center;
+    font-size: 2em;
     color: rgb(19, 18, 18);
 }
 
-#num7{
+
+#timeOfDay {
     position: absolute;
-    left: 13%;
-    top: 45%;
-    color: rgb(19, 18, 18);
+    top: 50%; /* align vertically center */
+    left: 110%; /* move it to the right side of the record */
+    transform: translateY(-50%);
+    display: flex;
+    gap: 5px;
+    font-size: 1.5em;
+    color: black;
 }
 
-#num8{
-    position: absolute;
-    left: -2%;
-    top: 32%;
-    color: rgb(19, 18, 18);
+#am{
+    color: #DEDEE0;
 }
 
-#num9{
-    position: absolute;
-    left: -6%;
-    top: 15%;
-    color: rgb(19, 18, 18);
-}
-
-#num12{
-    position: absolute;
-    left: 43%;
-    top: -9%;
-    color: rgb(19, 18, 18);
-}
 
 /* right side*/
 #albumCover{
-    margin-top: 80px;
+    margin-top: 50px;
 }
 
 #music{

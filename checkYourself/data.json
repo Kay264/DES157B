@@ -1,0 +1,31 @@
+{
+    "AM": {
+      "1": { "song": "N/A", "activity": "sleeping" },
+      "2": { "song": "N/A", "activity": "sleeping" },
+      "3": { "song": "N/A", "activity": "sleeping" },
+      "4": { "song": "N/A", "activity": "sleeping" },
+      "5": { "song": "N/A", "activity": "sleeping" },
+      "6": { "song": "N/A", "activity": "sleeping" },
+      "7": { "song": "Absinthe & OJ - Jasmi", "activity": "getting ready" },
+      "8": { "song": "MUTT - Leon Thomas", "activity": "getting to class" },
+      "9": { "song": "N/A", "activity": "In class" },
+      "10": { "song": "N/A", "activity": "In class" },
+      "11": { "song": "A Cold Sunday - Lil Yachty", "activity": "Lunch" },
+      "12": { "song": "Conversations With Strangers - Dolores Forever", "activity": "School work" }
+    },
+    "PM": {
+      "1": { "song": "Drumming song - Florenece + the Machine& Jules Buckley", "activity": "School work" },
+      "2": { "song": "I'm not Launghing Anymore - Left at London", "activity": "School work" },
+      "3": { "song": "N/A", "activity": "In class" },
+      "4": { "song": "WAIT - Doechii", "activity": "School work" },
+      "5": { "song": "reincarnated - Kendrick Lamar", "activity": "School work" },
+      "6": { "song": "bittersweet, TN (feat. Erin Rae) - Kevin Morby", "activity": "School work" },
+      "7": { "song": "N/A", "activity": "At social justic club" },
+      "8": { "song": "Good Books - Lola Young", "activity": "Bus ride home" },
+      "9": { "song": "No Allowed - TV Girl", "activity": "Dinner" },
+      "10": { "song": "This Is a Life (feat. Mitski & David Byrne) - Son Lux", "activity": "School work" },
+      "11": { "song": "N/A", "activity": "Sleeping" },
+      "12": { "song": "Drumming song - Florenece + the Machine& Jules Buckley", "activity": "school work" }
+    }
+}
+  

@@ -1,150 +1,147 @@
 {
-  "AM": {
-    "1": {
-      "song": "N/A",
-      "activity": "sleeping",
-      "album": "0",
-      "color": "#8E8D8D"
-    },
-    "2": {
-      "song": "N/A",
-      "activity": "sleeping",
-      "album": "0",
-      "color": "#8E8D8D"
-    },
-    "3": {
-      "song": "N/A",
-      "activity": "sleeping",
-      "album": "0",
-      "color": "#8E8D8D"
-    },
-    "4": {
-      "song": "N/A",
-      "activity": "sleeping",
-      "album": "0",
-      "color": "#8E8D8D"
-    },
-    "5": {
-      "song": "N/A",
-      "activity": "sleeping",
-      "album": "0",
-      "color": "#8E8D8D"
-    },
-    "6": {
-      "song": "N/A",
-      "activity": "sleeping",
-      "album": "0",
-      "color": "#8E8D8D"
-    },
-    "7": {
-      "song": "Absinthe & OJ - Jasmi",
-      "activity": "getting ready",
-      "album": "2",
-      "color": "#007CA8"
-    },
-    "8": {
-      "song": "MUTT - Leon Thomas",
-      "activity": "getting to class",
-      "album": "3",
-      "color": "#D5BB64"
-    },
-    "9": {
-      "song": "N/A",
-      "activity": "In class",
-      "album": "0",
-      "color": "#8E8D8D"
-    },
-    "10": {
-      "song": "N/A",
-      "activity": "In class",
-      "album": "0",
-      "color": "#8E8D8D"
-    },
-    "11": {
-      "song": "A Cold Sunday - Lil Yachty",
-      "activity": "Lunch",
-      "album": "4",
-      "color": "#A13B33"
-    },
-    "12": {
-      "song": "Conversations With Strangers - Dolores Forever",
-      "activity": "School work",
-      "album": "1",
-      "color": "#407046"
-    }
+  "1": {
+    "song": "Conversations With Strangers - Dolores Forever",
+    "activity": "School work",
+    "album": "1",
+    "color": "#407046"
   },
-  "PM": {
-    "1": {
-      "song": "Drumming song - Florence + the Machine & Jules Buckley",
-      "activity": "School work",
-      "album": "5",
-      "color": "#733930"
-    },
-    "2": {
-      "song": "I'm not Laughing Anymore - Left at London",
-      "activity": "School work",
-      "album": "6",
-      "color": "#45655E"
-    },
-    "3": {
-      "song": "N/A",
-      "activity": "In class",
-      "album": "0",
-      "color": "#8E8D8D"
-    },
-    "4": {
-      "song": "WAIT - Doechii",
-      "activity": "School work",
-      "album": "7",
-      "color": "#273A1A"
-    },
-    "5": {
-      "song": "reincarnated - Kendrick Lamar",
-      "activity": "School work",
-      "album": "8",
-      "color": "#919297"
-    },
-    "6": {
-      "song": "bittersweet, TN (feat. Erin Rae) - Kevin Morby",
-      "activity": "School work",
-      "album": "9",
-      "color": "#765425"
-    },
-    "7": {
-      "song": "N/A",
-      "activity": "At social justice club",
-      "album": "0",
-      "color": "#8E8D8D"
-    },
-    "8": {
-      "song": "Good Books - Lola Young",
-      "activity": "Bus ride home",
-      "album": "10",
-      "color": "#D47674"
-    },
-    "9": {
-      "song": "No Allowed - TV Girl",
-      "activity": "Dinner",
-      "album": "11",
-      "color": "#213088"
-    },
-    "10": {
-      "song": "This Is a Life (feat. Mitski & David Byrne) - Son Lux",
-      "activity": "School work",
-      "album": "12",
-      "color": "#8E7D8D"
-    },
-    "11": {
-      "song": "N/A",
-      "activity": "Sleeping",
-      "album": "0",
-      "color": "#8E8D8D"
-    },
-    "12": {
-      "song": "Dreams of a Distant Journey - Navy Blue",
-      "activity": "school work",
-      "album": "13",
-      "color": "#256DE3"
-    }
-  }
+  "2": {
+    "song": "N/A",
+    "activity": "sleeping",
+    "album": "0",
+    "color": "#8E8D8D"
+  },
+  "3": {
+    "song": "N/A",
+    "activity": "sleeping",
+    "album": "0",
+    "color": "#8E8D8D"
+  },
+  "4": {
+    "song": "N/A",
+    "activity": "sleeping",
+    "album": "0",
+    "color": "#8E8D8D"
+  },
+  "5": {
+    "song": "N/A",
+    "activity": "sleeping",
+    "album": "0",
+    "color": "#8E8D8D"
+  },
+  "6": {
+    "song": "N/A",
+    "activity": "sleeping",
+    "album": "0",
+    "color": "#8E8D8D"
+  },
+  "7": {
+    "song": "N/A",
+    "activity": "sleeping",
+    "album": "0",
+    "color": "#8E8D8D"
+  },
+  "8": {
+    "song": "Absinthe & OJ - Jasmi",
+    "activity": "getting ready",
+    "album": "2",
+    "color": "#007CA8"
+  },
+  "9": {
+    "song": "MUTT - Leon Thomas",
+    "activity": "getting to class",
+    "album": "3",
+    "color": "#D5BB64"
+  },
+  "10": {
+    "song": "N/A",
+    "activity": "In class",
+    "album": "0",
+    "color": "#8E8D8D"
+  },
+  "11": {
+    "song": "N/A",
+    "activity": "In class",
+    "album": "0",
+    "color": "#8E8D8D"
+  },
+  "12": {
+    "song": "A Cold Sunday - Lil Yachty",
+    "activity": "Lunch",
+    "album": "4",
+    "color": "#A13B33"
+  },
+  "13": {
+    "song": "Dreams of a Distant Journey - Navy Blue",
+    "activity": "school work",
+    "album": "13",
+    "color": "#256DE3"
+  },
+
+  "14": {
+    "song": "Drumming song - Florence + the Machine & Jules Buckley",
+    "activity": "School work",
+    "album": "5",
+    "color": "#733930"
+  },
+  "15": {
+    "song": "I'm not Laughing Anymore - Left at London",
+    "activity": "School work",
+    "album": "6",
+    "color": "#45655E"
+  },
+  "16": {
+    "song": "N/A",
+    "activity": "In class",
+    "album": "0",
+    "color": "#8E8D8D"
+  },
+  "17": {
+    "song": "WAIT - Doechii",
+    "activity": "School work",
+    "album": "7",
+    "color": "#273A1A"
+  },
+  "18": {
+    "song": "reincarnated - Kendrick Lamar",
+    "activity": "School work",
+    "album": "8",
+    "color": "#919297"
+  },
+  "19": {
+    "song": "bittersweet, TN (feat. Erin Rae) - Kevin Morby",
+    "activity": "School work",
+    "album": "9",
+    "color": "#765425"
+  },
+  "20": {
+    "song": "N/A",
+    "activity": "At social justice club",
+    "album": "0",
+    "color": "#8E8D8D"
+  },
+  "21": {
+    "song": "Good Books - Lola Young",
+    "activity": "Bus ride home",
+    "album": "10",
+    "color": "#D47674"
+  },
+  "22": {
+    "song": "No Allowed - TV Girl",
+    "activity": "Dinner",
+    "album": "11",
+    "color": "#213088"
+  },
+  "23": {
+    "song": "This Is a Life (feat. Mitski & David Byrne) - Son Lux",
+    "activity": "School work",
+    "album": "12",
+    "color": "#8E7D8D"
+  },
+  "24": {
+    "song": "N/A",
+    "activity": "Sleeping",
+    "album": "0",
+    "color": "#8E8D8D"
+  } 
 }

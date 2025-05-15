@@ -2,146 +2,146 @@
   "1": {
     "song": "Conversations With Strangers - Dolores Forever",
     "activity": "School work",
-    "album": "<img id='album1' src='images/song1.jpg' class='albumCover' alt='record 1'>",
+    "album": "images/song1.jpg",
     "color": "#407046"
   },
   "2": {
     "song": "N/A",
     "activity": "sleeping",
-    "album": "<img id='album0' src='images/song0.png' class='albumCover' alt='record 0'>",
+    "album": "images/song0.png",
     "color": "#8E8D8D"
   },
   "3": {
     "song": "N/A",
     "activity": "sleeping",
-    "album": "<img id='album0' src='images/song0.png' class='albumCover' alt='record 0'>",
+    "album": "images/song0.png",
     "color": "#8E8D8D"
   },
   "4": {
     "song": "N/A",
     "activity": "sleeping",
-    "album": "<img id='album0' src='images/song0.png' class='albumCover' alt='record 0'>",
+    "album": "images/song0.png",
     "color": "#8E8D8D"
   },
   "5": {
     "song": "N/A",
     "activity": "sleeping",
-    "album": "<img id='album0' src='images/song0.png' class='albumCover' alt='record 0'>",
+    "album": "images/song0.png",
     "color": "#8E8D8D"
   },
   "6": {
     "song": "N/A",
     "activity": "sleeping",
-    "album": "<img id='album0' src='images/song0.png' class='albumCover' alt='record 0'>",
+    "album": "images/song0.png",
     "color": "#8E8D8D"
   },
   "7": {
     "song": "N/A",
     "activity": "sleeping",
-    "album": "<img id='album0' src='images/song0.png' class='albumCover' alt='record 0'>",
+    "album": "images/song0.png",
     "color": "#8E8D8D"
   },
   "8": {
     "song": "Absinthe & OJ - Jasmi",
     "activity": "getting ready",
-    "album": "<img id='album2' src='images/song2.jpg' class='albumCover' alt='record 2'>",
+    "album": "images/song2.jpg",
     "color": "#007CA8"
   },
   "9": {
     "song": "MUTT - Leon Thomas",
     "activity": "getting to class",
-    "album": "<img id='album3' src='images/song3.jpg' class='albumCover' alt='record 3'>",
+    "album": "images/song3.jpg",
     "color": "#D5BB64"
   },
   "10": {
     "song": "N/A",
     "activity": "In class",
-    "album": "<img id='album0' src='images/song0.png' class='albumCover' alt='record 0'>",
+    "album": "images/song0.png",
     "color": "#8E8D8D"
   },
   "11": {
     "song": "N/A",
     "activity": "In class",
-    "album": "<img id='album0' src='images/song0.png' class='albumCover' alt='record 0'>",
+    "album": "images/song0.png",
     "color": "#8E8D8D"
   },
   "12": {
     "song": "A Cold Sunday - Lil Yachty",
     "activity": "Lunch",
-    "album": "<img id='album4' src='images/song4.jpg' class='albumCover' alt='record 4'>",
+    "album": "images/song4.jpg",
     "color": "#A13B33"
   },
   "13": {
     "song": "Dreams of a Distant Journey - Navy Blue",
     "activity": "school work",
-    "album": "<img id='album13' src='images/song13.jpg' class='albumCover' alt='record 13'>",
+    "album": "images/song13.jpg",
     "color": "#256DE3"
   },
 
   "14": {
     "song": "Drumming song - Florence + the Machine & Jules Buckley",
     "activity": "School work",
-    "album": "5",
+    "album": "images/song5.jpg",
     "color": "#733930"
   },
   "15": {
     "song": "I'm not Laughing Anymore - Left at London",
     "activity": "School work",
-    "album": "<img id='album5' src='images/song5.jpg' class='albumCover' alt='record 5'>",
+    "album": "images/song6.jpg",
     "color": "#45655E"
   },
   "16": {
     "song": "N/A",
     "activity": "In class",
-    "album": "<img id='album0' src='images/song0.png' class='albumCover' alt='record 0'>",
+    "album": "images/song0.png",
     "color": "#8E8D8D"
   },
   "17": {
     "song": "WAIT - Doechii",
     "activity": "School work",
-    "album": "<img id='album7' src='images/song7.jpg' class='albumCover' alt='record 7'>",
+    "album": "images/song7.jpg",
     "color": "#273A1A"
   },
   "18": {
     "song": "reincarnated - Kendrick Lamar",
     "activity": "School work",
-    "album": "<img id='album8' src='images/song8.jpg' class='albumCover' alt='record 8'>",
+    "album": "images/song8.jpg",
     "color": "#919297"
   },
   "19": {
     "song": "bittersweet, TN (feat. Erin Rae) - Kevin Morby",
     "activity": "School work",
-    "album": "<img id='album9' src='images/song9.jpg' class='albumCover' alt='record 9'>",
+    "album": "images/song9.jpg",
     "color": "#765425"
   },
   "20": {
     "song": "N/A",
     "activity": "At social justice club",
-    "album": "<img id='album0' src='images/song0.png' class='albumCover' alt='record 0'>",
+    "album": "images/song0.png",
     "color": "#8E8D8D"
   },
   "21": {
     "song": "Good Books - Lola Young",
     "activity": "Bus ride home",
-    "album": "<img id='album10' src='images/song10.jpg' class='albumCover' alt='record 10'>",
+    "album": "images/song10.jpg",
     "color": "#D47674"
   },
   "22": {
     "song": "No Allowed - TV Girl",
     "activity": "Dinner",
-    "album": "<img id='album11' src='images/song11.jpg' class='albumCover' alt='record 11'>",
+    "album": "images/song11.jpg",
     "color": "#213088"
   },
   "23": {
     "song": "This Is a Life (feat. Mitski & David Byrne) - Son Lux",
     "activity": "School work",
-    "album": "<img id='album12' src='images/song12.jpg' class='albumCover' alt='record 12'>",
+    "album": "images/song12.jpg",
     "color": "#8E7D8D"
   },
   "24": {
     "song": "N/A",
     "activity": "Sleeping",
-    "album": "<img id='album0' src='images/song0.png' class='albumCover' alt='record 0'>",
+    "album": "images/song0.png",
     "color": "#8E8D8D"
   } 
 }

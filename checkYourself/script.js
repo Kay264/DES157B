@@ -1,113 +1,90 @@
 (function(){
     'use strict';
-    console.log("reading js")
-
-
+    console.log("reading js");
 
     const amBtn = document.querySelector('#am');
     const pmBtn = document.querySelector('#pm');
+    const numberButtons = document.querySelectorAll('.nums');
+    const songName = document.querySelector('#name');
+    const activity = document.querySelector('#activity');
+    const albumCover = document.querySelector('#cover');
+    const body = document.body;
+
     let amTime = true;
-    let selectedHour = 1; 
+    let selectedHour = 1;
+    let musicData = {};
 
+    // Fetch the JSON data
     async function getData(){
-        //retrieves JSON file
-        const myMusicData = await fetch('data/music.json');
-        //parses JSON response into JavaScript object
-        const data = await myMusicData.json();
-
-        //extracts array of objects to ignore nums
-       /*  const values = Object.values(data);
-        console.log(values); */
-
-        document.querySelector('#name').innerHTML = outputMusicHTML(data); //For song name
-        document.querySelector('#activity').innerHTML = outputActivityHTML(data); //for activity
-        document.querySelector('body').style.color = outputColor(data); //for background color
-        document.querySelector('#cover').innerHTML = outputCover(data); //for album cover
-    
-        //---------------------------------------------------------------------------------
-
-        // Toggle AM/PM buttons
-        document.querySelector('#am').addEventListener('click', () => {
-            amTime = true;
-            updateButtonStyles();
-        });
-
-        document.querySelector('#pm').addEventListener('click', () => {
-            amTime = false;
-            updateButtonStyles();
-        });
-
-        function updateButtonStyles() {
-            document.querySelector('#am').style.color = amTime ? "#DEDEE0" : "black";
-            document.querySelector('#pm').style.color = amTime ? "black" : "#DEDEE0";
+        try {
+            const response = await fetch('data/music.json');
+            musicData = await response.json();
+        } catch (error) {
+            console.error('Error fetching JSON data:', error);
         }
+    }
 
-        //----------------------------------------------------------------------------------
+    // Update the DOM based on selected hour
+    function updateDOM() {
+        const hourKey = amTime ? selectedHour : selectedHour + 12;
+        const data = musicData[hourKey];
 
-        //Handle clicks on clock buttons
-        const numberButtons = document.querySelectorAll('.nums');
+        if (data) {
+            songName.textContent = data.song;
+            activity.textContent = data.activity;
+            body.style.backgroundColor = data.color;
 
+            // Update album cover
+            albumCover.innerHTML = ''; // Clear previous content
+            const img = document.createElement('img');
+            img.src = data.album; // Assuming 'album' is the image file name or URL
+            img.classList.add('albumCover', 'show');
+            img.alt = `Album cover for ${data.song}`;
+            albumCover.appendChild(img);
+        } else {
+            console.warn(`No data found for hour: ${hourKey}`);
+        }
+    }
+
+    // Update AM/PM button styles
+    function updateButtonStyles() {
+        amBtn.style.color = amTime ? "#DEDEE0" : "black";
+        pmBtn.style.color = amTime ? "black" : "#DEDEE0";
+    }
+
+    // Update clock number button styles
+    function updateNumberButtonStyles() {
         numberButtons.forEach((btn, i) => {
-            btn.addEventListener('click', () => {
-                const hour = i + 1;
-                selectedHour = amTime ? hour : hour + 12;
-                updateNumberButtonStyles();
-                console.log(`Selected hour: ${selectedHour} (${amTime ? 'AM' : 'PM'})`);
-            });
+            if (i + 1 === selectedHour) {
+                btn.classList.add('active');
+            } else {
+                btn.classList.remove('active');
+            }
         });
-
-        function updateNumberButtonStyles() {
-            numberButtons.forEach((btn, i) => {
-                if (i + 1 === selectedHour) {
-                    btn.classList.add('active');
-                } else {
-                    btn.classList.remove('active');
-                }
-            });
-        }
-
-    }
-    //-----------------------------------------------------------------------------------
-    //supportive functions
-
-    function outputMusicHTML(data){
-        let song = '';
-        data.forEach(function(eachEntry){
-            song = `${eachEntry.song}`
-
-        });
-        return song;
     }
 
-    function outputActivityHTML(data){
-        let activity = '';
-        data.forEach(function(eachEntry){
-            activity = `${eachEntry.activity}`
+    // Event listeners for AM/PM buttons
+    amBtn.addEventListener('click', () => {
+        amTime = true;
+        updateButtonStyles();
+        updateDOM();
+    });
 
+    pmBtn.addEventListener('click', () => {
+        amTime = false;
+        updateButtonStyles();
+        updateDOM();
+    });
+
+    // Event listeners for clock number buttons
+    numberButtons.forEach((btn, i) => {
+        btn.addEventListener('click', () => {
+            selectedHour = i + 1;
+            updateNumberButtonStyles();
+            updateDOM();
         });
-        return activity;
-    }
+    });
 
-    function outputColor(data){
-        let color = '';
-        data.forEach(function(eachEntry){
-            color = `${eachEntry.color}`
-
-        });
-        return color;
-    }
-
-
-    function outputCover(data){
-        let album = '';
-        data.forEach(function(eachEntry){
-            album = `${eachEntry.album}`
-
-        });
-        return album;
-
-    }
-
-
+    // Initialize
     getData();
 })();

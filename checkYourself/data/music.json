@@ -1,9 +1,9 @@
 {
   "1": {
-    "song": "Conversations With Strangers - Dolores Forever",
-    "activity": "School work",
-    "album": "images/song1.jpg",
-    "color": "#407046"
+    "song": "N/A",
+    "activity": "Sleeping",
+    "album": "images/song0.png",
+    "color": "#8E8D8D"
   },
   "2": {
     "song": "N/A",
@@ -66,10 +66,10 @@
     "color": "#8E8D8D"
   },
   "12": {
-    "song": "A Cold Sunday - Lil Yachty",
-    "activity": "Lunch",
-    "album": "images/song4.jpg",
-    "color": "#A13B33"
+    "song": "Conversations With Strangers - Dolores Forever",
+    "activity": "School work",
+    "album": "images/song1.jpg",
+    "color": "#407046"
   },
   "13": {
     "song": "Dreams of a Distant Journey - Navy Blue",
@@ -139,9 +139,9 @@
     "color": "#8E7D8D"
   },
   "24": {
-    "song": "N/A",
-    "activity": "Sleeping",
-    "album": "images/song0.png",
-    "color": "#8E8D8D"
+    "song": "A Cold Sunday - Lil Yachty",
+    "activity": "Lunch",
+    "album": "images/song4.jpg",
+    "color": "#A13B33"
   } 
 }

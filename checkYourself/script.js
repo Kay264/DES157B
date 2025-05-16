@@ -14,7 +14,7 @@
     let selectedHour = 1;
     let musicData = {};
 
-    // Fetch the JSON data
+    //fetch the JSON data
     async function getData(){
         try {
             const response = await fetch('data/music.json');
@@ -24,7 +24,7 @@
         }
     }
 
-    // Update the DOM based on selected hour
+    //update the DOM based on selected hour
     function updateDOM() {
         const hourKey = amTime ? selectedHour : selectedHour + 12;
         const data = musicData[hourKey];
@@ -34,10 +34,10 @@
             activity.textContent = data.activity;
             body.style.backgroundColor = data.color;
 
-            // Update album cover
-            albumCover.innerHTML = ''; // Clear previous content
+            //update album cover
+            albumCover.innerHTML = ''; //clear previous content
             const img = document.createElement('img');
-            img.src = data.album; // Assuming 'album' is the image file name or URL
+            img.src = data.album; //assuming 'album' is the image file name or URL
             img.classList.add('albumCover', 'show');
             img.alt = `Album cover for ${data.song}`;
             albumCover.appendChild(img);
@@ -46,7 +46,7 @@
         }
     }
 
-    // Update AM/PM button styles
+    //update AM/PM button styles
     function updateButtonStyles() {
         amBtn.style.color = amTime ? "#DEDEE0" : "black";
         pmBtn.style.color = amTime ? "black" : "#DEDEE0";

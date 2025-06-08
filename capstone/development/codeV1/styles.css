@@ -1,0 +1,77 @@
+body{
+
+    background-color: #C2CFBB;
+}
+
+.clouds{
+    transform: scale(2);
+}
+
+
+#firstRhino{
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#rhinoFactsContainer{
+    display: flex;
+}
+
+
+#rhinoFacts{
+    width: 1000px;
+    margin: auto;
+    margin-top: 1000px;
+    padding-bottom: 1500px;
+}
+
+
+#factRhino{
+    transform:scale(0.75)
+}
+
+.rhinopop{
+    transform: scale(0.5);
+}
+
+#endangeredVisuals{
+    display: flex;
+    margin: auto;
+}
+
+#endangeredExplain{
+    width: 800px;
+    margin: auto;
+}
+    
+#sky{
+    
+    position: relative;
+    width: 100vw;
+    height: 5000px;
+
+    background: #1b1030;
+    background: linear-gradient(180deg,rgba(27, 16, 48, 1) 0%, rgba(126, 87, 199, 1) 23%, rgba(67, 66, 127, 1) 44%, rgba(44, 57, 99, 1) 70%);
+}
+
+#rhinoFoodChain{
+    padding-top: 1000px;
+    padding-bottom: 1000px;
+}
+
+#cloud{
+    position: absolute;
+    top: 90%;
+
+}
+
+#tree{
+    position: absolute;
+    top: 71%;
+    left: 20%;
+
+    transform: scale(2);
+
+}

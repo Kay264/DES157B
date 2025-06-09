@@ -1,0 +1,31 @@
+{
+    "euphorbia":{
+    "scaleCount": "1",
+    "messageI": "The ecosystem crashed. With all the Eurphorbia there were more of the dune art and the black rhinos. This lead to overgrazing.",
+    "messageD": "The ecosystem crashed. Without enough Eurphorbia the black rhino starved."
+    },
+
+    "duneAnt":{
+    "scaleCount": "1",
+    "messageI": "The ecosystem crashed. The dune ants were too effcient at decomposition and used up dead material before other species had the chance.",
+    "messageD": "The ecosystem crashed. There wasn't enough nutrient recycling so the soil wasn;t good enough for plant growth."
+    },
+
+    "blackRhino":{
+    "scaleCount": "1",
+    "messageI": "The ecosystem crashed. With too many black rhinos there was overgrazing. With less plants there was soil erosion.",
+    "messageD": "The ecosystem crashed. There was plant overgrowth and the predators starved."
+    },
+
+    "spottedHyena":{
+    "scaleCount": "1",
+    "messageI": "The ecosystem crashed. The black rhino was hunted too much before they could reproduce. The hyenas eventually starved as well.",
+    "messageD": "The ecosystem crashed. The black rhino population increased. This lead to overgrazing."
+    },
+
+    "poacher":{
+    "scaleCount": "1",
+    "messageI": "The ecosystem crashed. The black rhino and the spotted hyena went extinct which has a destructive ripple through the ecosystem.",
+    "messageD": "The ecosystems rebounded! Without poachers overtime the natural balance was restored."
+    }
+}

@@ -1,0 +1,30 @@
+{
+  "1960": {
+    "population": "100,000",
+    "rhinoCount": 10
+  },
+  "1970": {
+    "population": "65,000",
+    "rhinoCount": 7
+  },
+  "1980": {
+    "population": "14,785",
+    "rhinoCount": 2
+  },
+  "1990": {
+    "population": "3,450",
+    "rhinoCount": 1
+  },
+  "2000": {
+    "population": "3,726",
+    "rhinoCount": 1
+  },
+  "2010": {
+    "population": "4,880",
+    "rhinoCount": 2
+  },
+  "2020": {
+    "population": "6,195",
+    "rhinoCount": 3
+  }
+}

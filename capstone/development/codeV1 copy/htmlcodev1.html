@@ -10,14 +10,19 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
 
     <!--Google Fonts-->
-    <link href="https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <!-- My Styles -->
     <link href="styles.css" rel="stylesheet">
 
     <!--GSAP script-->
-    <script src="gsap.min.js"></script>
+<!--     <script src="gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script> -->
     
+    <!-- GSAP + ScrollTrigger via CDN -->
+<script src="https://unpkg.com/gsap@3.12.2/dist/gsap.min.js"></script>
+<script src="https://unpkg.com/gsap@3.12.2/dist/ScrollTrigger.min.js"></script>
+
     <!-- My Script -->
     <script src="v1script.js" defer></script>
 
@@ -32,7 +37,7 @@
 
                 <div id="introText">
                     <h1>This is the story of the Black Rhino,</h1>
-                    <h2>one of the over 47,000 species that are currently threatend with extinction.</h2>
+                    <h2>one of the over 47,000 species that are currently threatened with extinction.</h2>
                 </div>
 
                 <img src="imgs/moon.png" alt="moon" id="moon">
@@ -50,137 +55,143 @@
         </section>
 
         <!--______________________________Section 2______________________________-->
-        <section id="rhinoFacts">
+        <div id="rhinoFactsWrapper">
+            <section id="rhinoFacts">
 
-            
+                
 
-            <img src="imgs/img02.png" alt="rhino facts img" id="factRhino">
+                <img src="imgs/img02.png" alt="rhino facts img" id="factRhino">
 
-            <div id="factText">
+                <div id="factText">
 
-                <h2>Black Rhino Characteristsics</h2>
+                    <h2>Black Rhino Characteristsics</h2>
 
-                <div id="rhinoFactsContainer">
-                   <article id="rhinoFacts01" class="rhinoFacts">
-                    <h3>Habitat</h3>
-                    <p>
-                        Black Rhinos live in southern and eastern Africa, especially in Kenya, Tanzania, Namibia, South Africa, and Zimbabwe.
-                    </p>
-                    <p>
-                        They thrive in areas with dense plant life, water sources, and mineral licks—ranging from semi-desert savannahs to wetlands.
-                    </p>
+                    <div id="rhinoFactsContainer">
+                    <article id="rhinoFacts01" class="rhinoFacts">
+                        <h3>Habitat</h3>
+                        <p>
+                            Black Rhinos live in southern and eastern Africa, especially in Kenya, Tanzania, Namibia, South Africa, and Zimbabwe.
+                        </p>
+                        <p>
+                            They thrive in areas with dense plant life, water sources, and mineral licks—ranging from semi-desert savannahs to wetlands.
+                        </p>
 
-                    <h3>Physical Characteristics</h3>
-                    <p>
-                        Black Rhinos are smaller than white rhinos. Males weigh up to 1,350 kg, females up to 900 kg, and they stand about 1.6 meters tall.
-                    </p>
-                    <p>
-                        Despite their name, black and white rhinos are both dark grey, with color variations from soil.
-                    </p>
-                    <p>
-                        Black rhinos have smaller heads and less prominent neck humps than white rhinos due to needing less neck strength.
-                    </p>
-                    <p>
-                        They have two horns made of compressed keratin strands, like fingernails. Though strong, these horns can break or split.
-                    </p>
-                    </article>
+                        <h3>Physical Characteristics</h3>
+                        <p>
+                            Black Rhinos are smaller than white rhinos. Males weigh up to 1,350 kg, females up to 900 kg, and they stand about 1.6 meters tall.
+                        </p>
+                        <p>
+                            Despite their name, black and white rhinos are both dark grey, with color variations from soil.
+                        </p>
+                        <p>
+                            Black rhinos have smaller heads and less prominent neck humps than white rhinos due to needing less neck strength.
+                        </p>
+                        <p>
+                            They have two horns made of compressed keratin strands, like fingernails. Though strong, these horns can break or split.
+                        </p>
+                        </article>
 
-                    <article id="rhinoFacts02" class="rhinoFacts">
-                    <h3>Social Behavior</h3>
-                    <p>
-                        Depending on habitat, black rhinos may be solitary and territorial or semi-social and less territorial.
-                    </p>
-                    <p>
-                        Adult males are more solitary than females. A hierarchy exists, with younger males subordinate to dominant bulls—often leading to conflict and injury.
-                    </p>
+                        <article id="rhinoFacts02" class="rhinoFacts">
+                        <h3>Social Behavior</h3>
+                        <p>
+                            Depending on habitat, black rhinos may be solitary and territorial or semi-social and less territorial.
+                        </p>
+                        <p>
+                            Adult males are more solitary than females. A hierarchy exists, with younger males subordinate to dominant bulls—often leading to conflict and injury.
+                        </p>
 
-                    <h3>Other Facts</h3>
-                    <p>
-                        In the wild, black rhinos live up to 35 years. They are browsers, feeding on trees, bushes, and shrubs, unlike white rhinos who graze on grass.
-                    </p>
-                    <p>
-                        Like white rhinos, they have poor eyesight but excellent smell and hearing.
-                    </p>
-                    </article>
+                        <h3>Other Facts</h3>
+                        <p>
+                            In the wild, black rhinos live up to 35 years. They are browsers, feeding on trees, bushes, and shrubs, unlike white rhinos who graze on grass.
+                        </p>
+                        <p>
+                            Like white rhinos, they have poor eyesight but excellent smell and hearing.
+                        </p>
+                        </article>
 
+
+                    </div>
 
                 </div>
 
-            </div>
+                <div id="rhinoFactImages">
+                <!-- 
+                    <img src="imgs/factImgs/border.png" alt="border" id="borderImg"> -->
+                    <img src="imgs/factImgs/habitat.png" alt="rhino fact img" id="factImages">
 
-            <div id="rhinoFactImages">
-<!-- 
-                <img src="imgs/factImgs/border.png" alt="border" id="borderImg"> -->
-                <img src="imgs/factImgs/habitat.png" alt="rhino fact img" id="factImages">
+                </div>
 
-            </div>
-
-          
             
+                
 
-        </section>
-
+            </section>
+        </div>
         <!--______________________________Section 3______________________________-->
         <section id="rhinoEndanger">
 
-            <h2 id="endangermentTitle">The Black Rhino Population Overtime</h2>
+            <div id="rhinoEndangerWrapper">
 
-            <div id="endangeredVisuals">
-                <div id="rhinoPopIllu">
+                <h2 id="endangermentTitle">The Black Rhino Population Over time</h2>
 
-                    <img src="imgs/popBG.png" alt="grassland illustration">
-                    <div id="rhinos">
-                        <img src="imgs/img03.png" alt="rhino facts img" class="rhinopop" id="rhino01">
-                        <img src="imgs/img03.png" alt="rhino facts img" class="rhinopop" id="rhino02">
-                        <img src="imgs/img03.png" alt="rhino facts img" class="rhinopop" id="rhino03">
-                        <img src="imgs/img03.png" alt="rhino facts img" class="rhinopop" id="rhino04">
-                        <img src="imgs/img03.png" alt="rhino facts img" class="rhinopop" id="rhino05">
-                        <img src="imgs/img03.png" alt="rhino facts img" class="rhinopop" id="rhino06">
-                        <img src="imgs/img03.png" alt="rhino facts img" class="rhinopop" id="rhino07">
-                        <img src="imgs/img03.png" alt="rhino facts img" class="rhinopop" id="rhino08">
-                        <img src="imgs/img03.png" alt="rhino facts img" class="rhinopop" id="rhino09">
-                        <img src="imgs/img03.png" alt="rhino facts img" class="rhinopop" id="rhino10">
-                    </div>
-                   
-                </div>
-                
-                <article id="data">
-                    <div>
-                        <h2 id="yearTitle">Year:</h2>
-                        <h3 id="year">0000</h3>
+                <div id="endangeredVisuals">
+                    <div id="rhinoPopIllu">
+
+                        <img src="imgs/popBG.png" alt="grassland illustration">
+                        <div id="rhinos">
+                            <img src="imgs/img03.png" alt="rhino facts img" class="rhinopop" id="rhino01">
+                            <img src="imgs/img03.png" alt="rhino facts img" class="rhinopop" id="rhino02">
+                            <img src="imgs/img03.png" alt="rhino facts img" class="rhinopop" id="rhino03">
+                            <img src="imgs/img03.png" alt="rhino facts img" class="rhinopop" id="rhino04">
+                            <img src="imgs/img03.png" alt="rhino facts img" class="rhinopop" id="rhino05">
+                            <img src="imgs/img03.png" alt="rhino facts img" class="rhinopop" id="rhino06">
+                            <img src="imgs/img03.png" alt="rhino facts img" class="rhinopop" id="rhino07">
+                            <img src="imgs/img03.png" alt="rhino facts img" class="rhinopop" id="rhino08">
+                            <img src="imgs/img03.png" alt="rhino facts img" class="rhinopop" id="rhino09">
+                            <img src="imgs/img03.png" alt="rhino facts img" class="rhinopop" id="rhino10">
+                        </div>
+                    
                     </div>
                     
+                <article id="endangeredExplain">
+
                     <div>
-                        <h2 id="popTitle">Population:</h2>
-                        <h3 id="pop">00000</h3>
+
+                        <h2>How did Black Rhinos Become endangered?</h2>
+
+                        <p>
+                            In the 19th century European countries gained more influence over the land and trade in the African continent.
+                            This transformation caused the relentless hunting of the black rhino.  
+                        </p>
+                        <p>
+                            This poaching practice escalted in the 1970s and 1980s with a rising demand for rhino horns in Asia and the Middle East.
+                        </p>
+                        <p>
+                            In 1970 there were about 65,000 black rhinos. by 1992 the population was reduced by 96% leading to a count around 2,400.
+                            Because of recent anti-poaching concervation efforts, the current black rhino population is at 6,421 individuals. 
+                            Poaching is still tyhe greatest threat to the black rhino population.
+                        </p>
+                        
                     </div>
-                    
+
+
                 </article>
-            </div>
-
-           <article id="endangeredExplain">
-
-                <div>
-
-                    <h2>How did Black Rhinos Become endangered?</h2>
-
-                    <p>
-                        In the 19th century European countries gained more influence over the land and trade in the African continent.
-                        This transformation caused the relentless hunting of the black rhino.  
-                    </p>
-                    <p>
-                        This poaching practice escalted in the 1970s and 1980s with a rising demand for rhino horns in Asia and the Middle East.
-                    </p>
-                    <p>
-                        In 1970 there were about 65,000 black rhinos. by 1992 the population was reduced by 96% leading to a count around 2,400.
-                        Because of recent anti-poaching concervation efforts, the current black rhino population is at 6,421 individuals. 
-                        Poaching is still tyhe greatest threat to the black rhino population.
-                    </p>
                     
+                  <!--   <article id="data">
+                        <div>
+                            <h2 id="yearTitle">Year:</h2>
+                            <h3 id="year">0000</h3>
+                        </div>
+                        
+                        <div>
+                            <h2 id="popTitle">Population:</h2>
+                            <h3 id="pop">00000</h3>
+                        </div>
+                        
+                    </article> -->
                 </div>
 
-
-            </article>
+            </div>
+           
 
         </section>
 
@@ -189,8 +200,11 @@
             <div id="foodChainContainer">
                 
                 <div id="foodChain">
-
-                    <h2 id="foodWebTitle">Black Rhino Food Web</h2>
+                    <div id="foodWebTitle">
+                        <h1>Black Rhino Food Web</h1>
+                        <h3>Increase or decrease the populations and see what happens!</h3>
+                    </div>
+                    
                     <img src="imgs/foodArrows.png" alt="food chain arrows" id="foodArrows">
 
                     <div>
@@ -210,8 +224,8 @@
 
                         <div class="foodWebInteractionMeat">
                             <div>
-                                <button>increase</button>
-                                <button>Decrease</button>
+                                <button id="EuphorbiaI">increase</button>
+                                <button id="EuphorbiaD">Decrease</button>
                             </div>
                             <p>Primary Consumer - plant</p>
                         </div>
@@ -223,8 +237,8 @@
 
                         <div class="foodWebInteractionMeat">
                             <div>
-                                <button>increase</button>
-                                <button>Decrease</button>
+                                <button id="DuneAntI">increase</button>
+                                <button id="DuneAntD">Decrease</button>
                             </div>
                             <p>decomposer</p>
                         </div>
@@ -236,8 +250,8 @@
 
                         <div class="foodWebInteractionMeat">
                             <div>
-                                <button>increase</button>
-                                <button>Decrease</button>
+                                <button id="PoacherI">increase</button>
+                                <button id="PoacherD">Decrease</button>
                             </div>
                             <p>tertiary consumer - omnivore</p>
                         </div>
@@ -249,8 +263,8 @@
 
                         <div class="foodWebInteractionMeat">
                             <div>
-                                <button>increase</button>
-                                <button>Decrease</button>
+                                <button id="BlackRhinoI">increase</button>
+                                <button id="BlackRhinoD">Decrease</button>
                             </div>
                             <p>Secondary Consumer - Herbivore</p>
                         </div>
@@ -262,8 +276,8 @@
 
                         <div class="foodWebInteractionMeat">
                             <div>
-                                <button>increase</button>
-                                <button>Decrease</button>
+                                <button id="spottedHyenaI">increase</button>
+                                <button id="spottedHyenaD">Decrease</button>
                             </div>
                             <p>Secondary Consumer - Carnivore</p>
                         </div>
@@ -276,7 +290,12 @@
            
 
             <div id="foodChainMessage">
-
+                <div id="foodChainMessageContainer">
+                    <button id="exit">X</button>
+                    <h3>Results</h3>
+                    <p id="foodChainText">Lorem ipsum dolor sit amet consectetur adipiscing elit. Sit amet consectetur adipiscing elit quisque faucibus ex. Adipiscing elit quisque faucibus ex sapien vitae pellentesque.</p> 
+                </div>
+                
             </div>
             
         </section>
@@ -306,56 +325,7 @@
 
                 <div id="bigPictureText">
 
-                    <h3>The impact of species extinction</h3>
-
-                    <p>
-                        According to the United Nations biodiversity is declining faster now than any other time in history. 
-                        Biodiversity is the foundation of many of our environments natural systems. 
-                        When those systems become off balanced it impacts us all. 
-                    </p>
-                    <p>
-                        Human activities, such as record levels of deforestation, causes habitat destruction and the loss of species. 
-                        What people may not realize is that when species are displaced they end up in contact with humans more often.
-                        This increases the risks of exposure to "zoonotic spillover" - when a disease jumps from animals to humans.
-                        Right now, more than 75% of infectious diseases in humans originated from animals.  
-                    </p>
-                    <p>
-                        Species loss also directly relates to agriculture. 
-                        Since food webs are interdependant, the loss of one species can cause the loss of another. 
-                        If the loss of a species or direct interference threatend the bee population for example, as said by the UN food and Agricultural Organization, our argiculture could be completely upended.
-                    </p>
-
-                    <p>
-                        Nature isn't just the foundation of our agriculture, it also drives our healthcare industry.
-                        Many of our current medicines were developed from nature.
-                        Species loss and Habitat destruction could halt medical innovation as 70% of all cancer drugs are natural or bio-inspired. 
-                    </p>
-
-                    <h3>What can be done</h3>
-
-                    <p>
-                        Conservation efforts are essential. 
-                        Restoring biodiversity could slow down climate change by aiding in carbon sequestration from the Earth's atmosphere.
-                        Besides carbon capture, some ecosystems can act as shields during storm surges and flooding.
-                    </p>
-
-                    <p>
-                        Islands play an important role in biodiversity as they host 20% of the Earth's species with only 4% of its surface area. 
-                        Islands are also where 80% of known speice extinction occur. 
-                    </p>
-
-                    <p>
-                        A big part of conservation involves supporting sustainable argiculture, fishing, shipping, and land use.
-                        It was found that croplands are expanding 58 times faster today than they did 20 years ago. 
-                        This is mainly used to feed livestock and support an intense demand for meat.
-                        Overishing, ocean acidification, and plastic pollution are just as harmful.
-                    </p>
-
-                    <p>
-                        One of the essential parts of conservation involves respecting indigenous knowledge and rights. 
-                        Indigenous groups have historically been environmental stewards.
-                        Research has proved that when indingenous groups control the land biodiversity flourishes, yet very few contries recognize indigenous land rights.
-                    </p>
+                    <h3>The impact of species extinction</h3> <p> The United Nations reports biodiversity is declining faster than ever. Biodiversity supports our environment’s natural systems, and when these systems are disrupted, it affects everyone. </p> <p> Human activities, like massive deforestation, destroy habitats and cause species loss. Displaced species come into more contact with humans, raising the risk of "zoonotic spillover"—diseases jumping from animals to people. Over 75% of infectious diseases in humans originated this way. </p> <p> Species loss also threatens agriculture. Food webs are interconnected, so losing one species can trigger losses in others. For example, the UN Food and Agricultural Organization warns that threats to bees could disrupt global agriculture. </p> <p> Nature also fuels healthcare: many medicines come from natural sources. Habitat destruction risks halting medical advances, as 70% of cancer drugs are natural or bio-inspired. </p> <h3>What can be done</h3> <p> Conservation is crucial. Restoring biodiversity helps slow climate change by improving carbon sequestration and protecting ecosystems that shield against storms and flooding. </p> <p> Islands are biodiversity hotspots, hosting 20% of Earth’s species on just 4% of its surface, but they also face 80% of species extinctions. </p> <p> Sustainable agriculture, fishing, shipping, and land use are key. Croplands now expand 58 times faster than 20 years ago, mainly to feed livestock due to high meat demand. Overfishing, ocean acidification, and plastic pollution add further threats. </p> <p> Respecting indigenous knowledge and rights is vital. Indigenous peoples have long been environmental stewards, and research shows biodiversity thrives where they manage the land—yet few countries recognize their land rights. </p>
 
                 </div>
 

@@ -6,6 +6,28 @@ body{
     color: antiquewhite;
 }
 
+main {
+  position: relative;
+}
+
+#narration, #rhinoFacts {
+  position: relative;
+  z-index: 1;
+}
+
+
+#narration {
+  top: 0;
+  z-index: 2;
+}
+
+#rhinoFacts {
+padding-top: 600px;
+  z-index: 1;
+  margin-top: -100vh; /* optional: helps them overlap during scroll */
+}
+
+
 /*_____________________fonts__________________ */
 
 h1 h2 h3 h4{
@@ -26,6 +48,7 @@ h3{
 
 p{
     font-size: 1.2em;
+    font-family: "Montserrat";
 }
 
 
@@ -52,17 +75,31 @@ p{
 #moon{
     position: absolute;
     transform: scale(1.2);
-    top: 9%;
-    left: 0%;
+    top: 12%;
+    left: 0%; 
+    transition: top ease;
+}
+
+
+
+#moon.stopped {
+  position: absolute;
+  top: 3200px; /* adjust this value as needed */
+}
+
+#moon.fixed {
+  position: fixed;
+  top: 12%;
+  left: 0%;
 }
 
 #introText{
     position: absolute;
-    top: 2%;
-    left: 20%;
+    top: 5%;
+    left: 30%;
     z-index: 1;
     margin: auto;
-    width: 1000px;
+    width:800px;
     color: antiquewhite;
 }
 
@@ -75,12 +112,17 @@ p{
 
 }
 
-#firstRhino{
-    width: 100vw;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+#firstRhino {
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+
 }
+
+
+
 
 #factText{
  max-width: 750px;
@@ -88,7 +130,8 @@ p{
 
 
 #rhinoFacts{
-    
+    position: relative;
+    top: 0;
     margin-top: 200px;
     padding-bottom: 200px;
     display: flex;
@@ -96,7 +139,11 @@ p{
 }
 
 
-
+#rhinoFactsWrapper {
+  position: relative;
+  height: 3200px; /* 4 images × 800px each */
+  margin-bottom: 180vh; /* Gives space after pinning ends */
+}
 
 #factRhino{
  width: 500px;
@@ -107,6 +154,11 @@ p{
     bottom: 30%;
     transform: scale(1.25);
 }
+
+#rhinoEndanger{
+    padding-top: 150px;
+}
+
 #endangeredVisuals{
     display: flex;
     gap: 20px;
@@ -115,8 +167,8 @@ p{
 
 #endangeredExplain{
     margin: auto;
-    margin-top: 400px;
-    width: 900px;
+    margin-top: 100px;
+    width: 600px;
     
 }
 
@@ -124,6 +176,7 @@ p{
     margin: auto;
     text-align: center;
     margin-bottom: 80px;
+    margin-top: 80px;
 }
 
 #rhinoFactImages{
@@ -136,7 +189,7 @@ p{
     margin: auto;
     position: absolute;
     bottom: 33%;
-    left: 8%;
+    left: -8%;
    
 }
 
@@ -229,6 +282,7 @@ p{
 #rhinoFoodChain{
     padding-top: 400px;
     padding-bottom: 200px;
+    position: relative;
    
 }
 
@@ -245,6 +299,8 @@ p{
 #foodChainUse{
     background-color: #4f5237;
     padding: 20px;
+    max-height: 100vh;
+    height: 870px
 }
 
 
@@ -255,9 +311,9 @@ p{
 
 #foodWebTitle{
     position: absolute;
-    font-size: 3em;
-    width: 300px;
-    top: 0%;
+    
+    width: 400px;
+    top: -3%;
     left: 10%;
 }
 
@@ -273,6 +329,38 @@ p{
 
 .foodWebInteractionMeat{
     padding-top: 35px;
+}
+
+#foodChainMessage{
+    background-color: antiquewhite;
+    color: #2d4128;
+    margin: auto;
+    text-align: center;
+    width: 800px;
+    height: 300px;
+    border-radius: 20px;
+
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+
+    opacity: 0;
+ 
+}
+
+#foodChainMessageContainer{
+    position: relative;
+}
+
+#exit{
+    position: absolute;
+    left:2%;
+    top:2%;
+}
+
+#foodChainText{
+    padding: 20px;
 }
 
 #sun{
@@ -357,7 +445,7 @@ button:hover{
 #catch{
     position: absolute;
     left: 16%;
-    bottom: 45%;
+    bottom:40%;
     width: 220px;
     color:#283b29;
     font-size: 2.2em;
